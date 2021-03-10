@@ -1,36 +1,27 @@
 #! /bin/bash
-# @Juan Sánchez  ASIX-M01
+#
+# @Juan Sánchez
+#
 # Feb 2021
-# Primer ejemplo de script
-# --------------------------------------
-
+#
+# primer exemple script
+# -------------------------------------
 echo "Hello World"
-echo "buenos dias, hoy llueve"
-nom=Juan
-edad=20
-echo $nom $edad
-
-# -e --> que se ejecute asi
-## \t --> tabulacion
-echo -e "nom: $nom\t edat: $edad"
-echo -e 'nom: $nom\t edat: $edad'
-## \n --> linea nueva
-echo -e "nom: $nom\n edat: $edad"
-echo -e 'nom: $nom\n edat: $edad'
-
+echo "bon dia, avui plou"
+nom="pere puig pou"
+edat=25
+echo $nom $edat
+echo -e "nom: $nom\n edat: $edat"
+echo -e 'nom: $nom\n edat: $edat'
 uname -a
 uptime
 echo $SHELL
 echo $SHLVL
 echo $((4*32))
-echo $(($edad * 2))
-
-
-
-read data1 data2 
-echo -e "$data1 \n $data2"
-
-# Codigo de error o status
-## si va bien es 0, cualuiqer otro es que algo ha ido mal
-### Para verificarlo --> echo $?
+echo $((edat*2))
+read data
+echo $data
 exit 0
+
+
+
